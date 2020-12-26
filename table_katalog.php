@@ -24,6 +24,7 @@ require_once('controler/Controller3.php');
     <input type="text" name="search" placeholder="pipeline or elements">
     pipeline-AREA
     <select name="select">
+      <option></option>
     <?
     $SQLM->sqlsingl("SELECT test.`pipeline-AREA` FROM test.test GROUP BY test.`pipeline-AREA` ORDER BY test.`pipeline-AREA`");
     while($row=$SQLM->select->fetch_assoc()){
