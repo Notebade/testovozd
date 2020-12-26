@@ -1,6 +1,6 @@
 <?
 /*
-*класс для выполнеия sql
+*класс для выполнения sql
 */
 class SQLManager
 {
@@ -11,7 +11,7 @@ class SQLManager
   private $DBConnect;
   public $select;
   /*
-  *при иницилизации класса производит получения строки подключения
+  *при инициализации класса производит получения строки подключения
   */
   function __construct(DBConn $DBConnect)
   {
@@ -26,7 +26,7 @@ class SQLManager
     $this->DBConnect->ConClose();
   }
   /*
-  *выполнений нескольких sql запросов 
+  *выполнений нескольких sql запросов
   */
   public function sqlmulti($sql)
   {

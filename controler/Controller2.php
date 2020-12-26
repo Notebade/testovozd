@@ -20,7 +20,7 @@ if($_GET)
   $page=filter_var($_GET['page'], FILTER_SANITIZE_NUMBER_INT);
   /*
   *проверка на пустоту обоих запросов
-  *$body- запись массива полученых данных
+  *$body- запись массива полученных данных
   */
   if($limit!="" and $page!="")
   {
